@@ -6,8 +6,13 @@ const readAllUsers = async ()=>{
         TableName : tableUser
     }
     try {
-        const respues = await docClient.scan(params);
-        console.log('respuesta',respues);
+        docClient.scan(params,function(err,data){
+            if(err){
+                console.log('error en params',err)
+            }else{
+                console.log('succes',data)
+            }
+        });
 
     } catch (error) {
         console.log('error',error)
