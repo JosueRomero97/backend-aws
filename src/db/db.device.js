@@ -47,3 +47,4 @@ export const getDeviceById = async(data)=>{
         console.log('error',error)
     }
 }
+
