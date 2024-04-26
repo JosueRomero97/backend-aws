@@ -3,7 +3,7 @@ import * as userCtrl  from '../controller/user.controller.js'
 const router = Router();
 
 router.get('/list',userCtrl.listaUsuarios);
-router.post('/create',userCtrl.crearUsuario);
+router.post('/',userCtrl.crearUsuario);
 router.get('/:dni',userCtrl.obtenerUsuario);
 router.delete('/:dni',userCtrl.eliminarUsuario);
 export default router;
