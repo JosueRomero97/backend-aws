@@ -52,7 +52,7 @@ const getUserById = async (data )=>{
   
     } catch (error) {
         console.log('error',error)
-        return {success:true,data:null}
+        return {success:false,data:null}
     }
 }
 
